@@ -17,7 +17,6 @@ body {
   padding: 20px;
   margin-left: 400px;
   margin-top: 180px;
-  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,11 +49,7 @@ body {
 .diceimage:hover{
   border: 3px solid hsl(150, 100%, 66%) ;
 }
-.advicename{
-  position: absolute;
-  top: 220px;
-  left: 200px;
-}
+
 .attribution {
   margin-top: 110px;
   text-align: center;
@@ -64,4 +59,32 @@ body {
   color: hsl(229, 19%, 45%);
   font-size: 16px;
 
+}
+
+/* Responsive media querry */
+@media only screen and (max-width: 375px) {
+  .mainContainer{
+    padding: 0px;
+    margin-left: 15px;
+    margin-top: 180px;
+    width: 91%;
+    height: 310px;
+  gap: 25px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color:hsl(217, 19%, 24%) ;
+  }
+  .diceimage{
+    bottom: 195px;
+    margin-left: 160px;
+  }
+  .divider{
+    width: 90%;
+  }
+  
+.attribution {
+  width: 70%;
+  margin-left: 50px;
+}
 }

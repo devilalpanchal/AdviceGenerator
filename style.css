@@ -6,7 +6,6 @@
 body {
   background-color: hwb(218 12% 80%);
   color: white;
-
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
@@ -23,17 +22,17 @@ body {
   flex-direction: column;
   width: 40%;
   height: 370px;
-  gap: 25px;
+  gap: 30px;
   border-radius: 10px;
   background-color:hsl(217, 19%, 24%) ;
 }
 #advice{
   color:hsl(150, 100%, 66%);
-  font-size: 20px;
+  font-size: 15px;
 
 }
 #paragrafh {
-  font-size: 28px;
+  font-size: 20px;
   color: white;
 }
 .diceimage{

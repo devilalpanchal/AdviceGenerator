@@ -1,62 +1,67 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+body {
+  background-color: hwb(218 12% 80%);
+  color: white;
 
-.mainContainer{
-    border: 1px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 40%;
-    height: 500px;
-    margin: auto 0;
-    gap: 50px;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
-/* 
-// FETCH API
-// This tells the browser to pay attention to the following elements:
-const id = document.querySelector("#id");
-const quote = document.querySelector("#quote");
-const button = document.querySelector("#button");
-
-function getQuote() {
-  // Call the fetch function:
-  fetch("https://api.adviceslip.com/advice")
-    // When you've called the fetch function, then a response (stream of data) comes back as part of a Promise
-    // A promise initially is in a "Pending" state
-    .then((response) => {
-      return response.json();
-      // The JSON data will be converted (parsed) into native JavaScript objects
-      // The response gives a stream of data in the format of JSON
-    })
-    // .then () is a function that receives a function to be executed when it has been fulfilled
-    .then((data) => {
-      const number = data.slip.id;
-      const advice = data.slip.advice;
-
-      id.textContent = number;
-      quote.innerHTML = `<blockquote>&ldquo;${advice}&rdquo;</blockquote>`;
-    })
-    // .catch () is a function that receives a function to be executed if and when it has been rejected
-    .catch((error) => {
-      // Log the error to the console to see what's going wrong:
-      console.log("Error");
-      console.log(error);
-    });
+.mainContainer {
+  text-align: center;
+  padding: 20px;
+  margin-left: 400px;
+  margin-top: 180px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  height: 310px;
+  gap: 25px;
+  border-radius: 10px;
+  background-color:hsl(217, 19%, 24%) ;
 }
-// Trigger this event when the button is clicked:
-button.addEventListener("click", function () {
-  getQuote();
-});
-// Display initial quote when the window is reloaded
-window.unload = () => {
-  getQuote();
-}; */
+#advice{
+  color:hsl(150, 100%, 66%);
+  font-size: 20px;
+
+}
+#paragrafh {
+  font-size: 28px;
+  color: white;
+}
+.diceimage{
+  background-color: hsl(150, 100%, 66%);
+  bottom: 125px;
+  position: absolute;
+  border: none;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+  margin-left: 650px;
+}
+.diceimage:hover{
+  border: 3px solid hsl(150, 100%, 66%) ;
+}
+.advicename{
+  position: absolute;
+  top: 220px;
+  left: 200px;
+}
+.attribution {
+  margin-top: 110px;
+  text-align: center;
+  font-size: 15px;
+}
+.attribution a {
+  color: hsl(229, 19%, 45%);
+  font-size: 16px;
+
+}

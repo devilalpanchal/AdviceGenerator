@@ -15,7 +15,7 @@ body {
   text-align: center;
   padding: 20px;
   margin-left: 400px;
-  margin-top: 130px;
+  margin-top: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +38,6 @@ body {
 .diceimage{
   background-color: hsl(150, 100%, 66%);
   bottom: 125px;
-  position: absolute;
   border: none;
   text-align: center;
   padding: 10px;
@@ -50,7 +49,7 @@ body {
 }
 
 .attribution {
-  margin-top: 110px;
+  margin-top: 70px;
   text-align: center;
   font-size: 15px;
 }

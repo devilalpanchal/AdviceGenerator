@@ -12,6 +12,7 @@ body {
   font-style: normal;
 }
 .mainContainer {
+  z-index: -1;
   text-align: center;
   padding: 20px;
   margin-left: 400px;
@@ -36,6 +37,8 @@ body {
   color: white;
 }
 .diceimage{
+  margin-top: -40px;
+  z-index: 100;
   background-color: hsl(150, 100%, 66%);
   bottom: 125px;
   border: none;
